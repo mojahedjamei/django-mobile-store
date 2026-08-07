@@ -1,3 +1,4 @@
+
 # 📱 Django Mobile Store
 
 A lightweight and efficient e-commerce web application developed with the Django Framework. This project demonstrates core backend engineering principles, focusing on product management, secure user authentication, and dynamic data rendering.
@@ -32,3 +33,27 @@ A lightweight and efficient e-commerce web application developed with the Django
 2. **Create a virtual environment:**
    ```bash
    python -m venv venv
+
+```
+
+1. **Activate the virtual environment
+ and install requirements:**
+```
+pip install django pillow
+
+```
+
+2. **Apply database migrations:**
+```
+python manage.py makemigrations
+python manage.py migrate
+
+```
+
+3. **Run the development server:**
+```
+python manage.py runserver
+
+```
+
+*The application will be available at `http://127.0.0.1:8000/*`
