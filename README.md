@@ -37,12 +37,12 @@ A lightweight and efficient e-commerce web application developed with the Django
 ```
 
 1. **Activate the virtual environment** and install requirements:
-```bash
+```
 pip install django pillow
 
 ```
 2. **Apply database migrations:**
-```bash
+```
 python manage.py makemigrations
 python manage.py migrate
 
@@ -50,7 +50,7 @@ python manage.py migrate
 
 
 3. **Run the development server:**
-```bash
+```
 python manage.py runserver
 
 ```
