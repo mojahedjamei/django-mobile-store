@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}وبسایت من{% endblock %}</title>
+    <style>
+        nav a, nav button {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav style="background: #eee; padding: 10px;">
+    <a href="{% url 'home' %}">خانه</a>
+    <a href="{% url 'item_list' %}">آیتم‌ها</a>
+
+    {% if user.is_authenticated %}
+        <span>{{ user.username }} خوش آمدید</span>
+        <form method="post" action="{% url 'logout' %}" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit" style="background:none; border:none; color:blue; cursor:pointer; text-decoration:underline;">خروج</button>
+        </form>
+    {% else %}
+        <a href="{% url 'login' %}">ورود</a>
+        <a href="{% url 'signup' %}">ثبت‌ نام</a>
+    {% endif %}
+</nav>
+
+<hr>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>
