@@ -30,30 +30,36 @@ This project demonstrates core backend engineering principles, focusing on produ
 ## 🚀 How to Run Locally
 
 1. **Clone the repository** and navigate to the project directory.
+
 2. **Create a virtual environment:**
+
    ```bash
    python -m venv venv
-```
+   ```
 
-3. Activate the virtual environment and install the requirements:
+3. **Activate the virtual environment and install the requirements:**
+
    ```bash
    # On Windows:
    venv\Scripts\activate
+
    # On macOS/Linux:
    source venv/bin/activate
-   
+
    pip install django pillow
    ```
-4. Apply database migrations:
+
+4. **Apply database migrations:**
+
    ```bash
    python manage.py makemigrations
    python manage.py migrate
    ```
-5. Run the development server:
+
+5. **Run the development server:**
+
    ```bash
    python manage.py runserver
    ```
 
-The application will be available at http://127.0.0.1:8000/.
-
-```
+The application will be available at **http://127.0.0.1:8000/**.
