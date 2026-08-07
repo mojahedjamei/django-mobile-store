@@ -32,21 +32,17 @@ A lightweight and efficient e-commerce web application developed with the Django
 2. **Create a virtual environment:**
    ```bash
    python -m venv venv
-3.Activate the virtual environment and install requirements:
+Activate the virtual environment and install requirements:
 
-  ```bash
+Bash
 pip install django pillow
 Apply database migrations:
 
-
-  ```bush
+Bash
 python manage.py makemigrations
 python manage.py migrate
 Run the development server:
 
-
-  ```bash
+Bash
 python manage.py runserver
-
-
 The application will be available at http://127.0.0.1:8000/
